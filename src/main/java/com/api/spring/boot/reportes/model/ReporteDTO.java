@@ -4,9 +4,12 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import org.springframework.hateoas.RepresentationModel;
 
 @Data
-public class ReporteDTO {
+@EqualsAndHashCode(callSuper = true)
+public class ReporteDTO extends RepresentationModel<ReporteDTO> {
     private Integer idVenta;
     private LocalDate fechaVenta;
     private BigDecimal total;
@@ -18,6 +21,10 @@ public class ReporteDTO {
         this.fechaVenta = fechaVenta;
         this.total = total;
         this.idVendedor = idVendedor;
+    }
+
+    // Constructor vacío para HATEOAS
+    public ReporteDTO() {
     }
 
     // Getters y setters
