@@ -40,8 +40,3 @@ Microservicio que centraliza los datos desde las APIs de `ventas` y `detallevent
 - **GET a API Ventas:** `/ventas`
 - **GET a API DetalleVenta:** `/detalleventas`
 
----
-
-## 🧪 Pruebas
-
-Swagger UI te permite probar todo visualmente. También puedes usar Postman.
